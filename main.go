@@ -25,8 +25,8 @@ func main() {
 	http.HandleFunc("/commit", commitHandler)
 
 	// 设置监听的端口，这里我们使用 8080 端口
-	fmt.Println("Server is listening on http://localhost:47080")
-	http.ListenAndServe(":47080", nil)
+	fmt.Println("Server is listening on http://localhost:80")
+	http.ListenAndServe("0.0.0.0:80", nil)
 }
 
 // serveHomePage 函数用于提供首页
